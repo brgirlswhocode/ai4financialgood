@@ -1,6 +1,8 @@
 import streamlit as st
 import openai as ai
 
+st.set_page_config(page_title = "Financial Literacy Chatbot", layout = "wide")
+
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 try:
@@ -16,7 +18,6 @@ def chatgpt_call(prompt, model, temperature):
   )
   return completion['choices'][0]['message']['content']
 
-st.set_page_config(page_title = "Financial Literacy Chatbot", layout = "wide")
 st.header('Financial Literacy Chatbot :money_with_wings: :money_with_wings:')
 st.subheader('Presented by BRHS Girls Who Code')
 st.write(
