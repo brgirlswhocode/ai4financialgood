@@ -6,7 +6,7 @@ st.set_page_config(page_title = "Financial Literacy Chatbot", layout = "wide")
 API_ENDPOINT = "https://api.openai.com/v1/chat/completions"
 
 try:
-  ai.api_key = "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"
+  ai.api_key = "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"
 except:
   st.text('Add API Key')
 
